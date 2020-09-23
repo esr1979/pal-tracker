@@ -11,8 +11,8 @@ public class PalTrackerApplication {
         SpringApplication.run(PalTrackerApplication.class, args);
     }
 
-    @Bean
-    public TimeEntryRepository retrieveRepo () {
-        return new InMemoryTimeEntryRepository();
-    }
+//    @Bean --> We have put this in a Configuration Class. In fact SpringBootApplication is a configuration class.
+//    public TimeEntryRepository retrieveRepo () {
+//       return new InMemoryTimeEntryRepository();
+// }
 }

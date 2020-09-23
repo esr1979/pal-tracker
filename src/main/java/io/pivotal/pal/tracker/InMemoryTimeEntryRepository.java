@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+//@Component --> another way of telling Spring where is the TimeEntryRepository (instead of Bean).
+//No Spring annotations here, only old java. One reason to use @Bean --> avoid Spring dependency.
+//Another reason is because it gives you more flexibility -> all configuration in one place -->
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     private HashMap<Long, TimeEntry> timeEntrys = new HashMap<>();
